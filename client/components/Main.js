@@ -3,7 +3,7 @@ import {Link} from 'react-router';
 
 const Main = React.createClass({
    render(){
-     return(
+     return( 
        <div>
          <h1>
            <Link to="/">Reduxstagram</Link>
