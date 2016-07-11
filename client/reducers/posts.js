@@ -1,5 +1,18 @@
 function posts(state = [],action){
-  console.log(state,action);
+
+  switch (action.type) {
+    case 'INCREMENT_LIKE':
+    console.log('Incrementing Likes');
+    return [
+      ...state.slice(0,i),
+      {...state[i], likes: state[i].likes+1},
+      ...state.slice(i+1),
+    ]
+
+      break;
+    default:
+
+  }
   return state;
 }
 
